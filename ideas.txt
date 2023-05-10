@@ -1,0 +1,24 @@
+Program collects user input
+word is created
+word is then hidden
+
+user takes a guess
+
+each time there is a correct letter the position of the hidden word is revealed
+each wrong letter and the letter is added to the wrong letters. a stick is draw on illistration. 
+
+if the user guesses all the letters before the hangman is drawn they win
+if the user guesses too many wrong letters the user loses.
+
+
+
+extras
+
+user can only enter alphabetic characters
+only the first letter the user types is used so user cannot type multiple letters
+all inputs are converted to upper case
+user cannot use a letter that has already been used.
+
+How I tested:
+I tested hangman using the word apple.
+
