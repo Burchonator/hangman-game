@@ -27,8 +27,6 @@ Rules:
 """
 )
 
-import re
-
 
 class hangman_character:
     stick = 0
@@ -37,10 +35,10 @@ class hangman_character:
     def __init__(self):
         pass
 
-    def add_stick(self):
+    def add_stick(self):  # adds a stick to hangman
         self.stick = self.stick + 1
 
-    def show_figure(self):
+    def show_figure(self):  # draws hangman
         if self.stick == 0:
             print(
                 """
@@ -214,12 +212,12 @@ class hangman_character:
         else:
             print("THERE SEEMS TO BE AN ISSUE WITH THE DRAWING")
 
-    def reset(self):
+    def reset(self):  # resets hangman class
         self.stick = 0
         self.hung = False
 
 
-def display_guessed():
+def display_guessed():  # displays hangman and the letters guessed
     print()
     hangman.show_figure()
     print()
@@ -229,19 +227,21 @@ def display_guessed():
     print()
 
 
-hangman = hangman_character()
-word = str(input("Please type a word: ")).upper()  # Collect user word
-print()
-wrong_guesses = []
+hangman = hangman_character()  # creates and instance of hangman
 
-hidden_word = []
-for i in word:
+word = str(input("Please type a word: ")).upper()  # collects word from the user
+print()
+
+wrong_guesses = []  # list for wrong guesses
+hidden_word = []  # list for correct guesses
+
+for i in word:  # adds hidden characters to list
     hidden_word.append("_")
 
 hangman_hung = False
 win = False
 
-for i in range(30):
+for i in range(30):  # used to hide the word the user input
     print()
 
 display_guessed()
