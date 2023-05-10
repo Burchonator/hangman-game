@@ -18,8 +18,8 @@ print(
     """
 Rules:
 
-1. Select a word to guess
-2. Type 1 letter in and click enter (the first alphabetic character is used)
+1. Select a word to guess.
+2. Type 1 letter in and click enter.
 3. Try to guess the correct letters to save the hangman from being hung.
 4. If you guess the word before the hangman is hung you win. Otherwise you lose.
 5. Enjoy!
