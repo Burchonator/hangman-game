@@ -1,2 +1,2 @@
 # hangman-game
-A terminal game that I am making for my Codecademy Python Project
+A terminal game I made for my Codecademy Python Project
